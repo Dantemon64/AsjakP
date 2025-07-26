@@ -1,10 +1,11 @@
-import random
+meme_dict = {
+            "CRINGE": "Algo excepcionalmente raro o embarazoso",
+            "LOL": "Una respuesta común a algo gracioso",
+            }
 
-characters = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
-long = int(input("Longitud de la contraseña:   "))
-contra = ""
+word = input("Escribe una palabra que no entiendas (¡con mayúsculas!): ")
 
-for i in range(long):
-    contra += random.choice(characters)
-
-print(f"Contraseña generada:  {contra}")
+if word in meme_dict.keys():
+    print(meme_dict[word])
+else:
+    print("Ehh... XP")
